@@ -5,20 +5,51 @@ body {
 }
 
 footer {
-    background-color: #A8B89A;
+    position: absolute;
+    background-image: url("../assets/imgs/Background_Footer.png");
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-footer p {
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin: 5px 0;
+footer #esquerda { 
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+footer #esquerda p {
+    font-family: "Momo Trust Display", sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    width: 40%;
 }
 
-footer a {
-    color: #000;
-    font-weight: bold;
-    letter-spacing: 2px;
+footer #esquerda img {
+    width: 20%;
+    height: 20%;
+}
+
+footer #direita {
+    width: 55%;
+    padding-right: 5%;
+    padding-top: 7%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+}
+footer #direita p {
+    font-family: "Momo Trust Display", sans-serif;
+    color: white;
+    font-size: 1.4rem;
+    width: 30%;
 }
 
 .home{    background-image: url("../imgs/cao.jpg");
