@@ -1,1 +1,76 @@
 
+
+body {
+    background-color: #F5EBDD;
+}
+
+.sobre {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    gap: 40px;
+
+    width: 1200px;
+    margin: 0 0;
+    padding: 50px 30px;
+}
+
+
+
+.imagem-cao img {
+    width: 426px;
+    height: 644px;
+    position: left;
+
+}
+
+.conteudo {
+    width: auto;
+    position: right;
+    font-family: 'Momo Trust Display', sans-serif;
+    font-size: 24px;
+}
+
+.descricao {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Momo Trust Display', sans-serif;
+}
+
+.caracteristicas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 20px;
+    font-family: 'Momo Trust Display', sans-serif;
+    font-size: 16px;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.item img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.h1 {
+    font-size: 32px;
+    font-weight: 400px;
+    font-family: 'Momo Trust Display', sans-serif;
+    color:#5C370D;
+}
+
+.item h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-family: 'Momo Trust Display', sans-serif;
+}
+
+.item p {
+    font-size: 16px;
+    font-family: 'Momo Trust Display', sans-serif;
+}
