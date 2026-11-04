@@ -1,0 +1,84 @@
+.login{
+    background-image: url("../assets/imgs/imagemlogin.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+}
+
+.registrar{
+    margin-top: 15vh;
+}
+
+body{
+    height: 100px;
+    margin: 0;
+}
+
+.logininfo {
+  width: 500px;
+  height: auto;
+  background: rgba(128, 128, 128, 0.5);   
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Momo Trust Display', sans-serif;
+}
+
+.login h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.logininfo input[type="email"],
+.logininfo input[type="password"] {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 8px 0;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 12px;
+    font-size: 15px;
+    font-family: 'Momo Trust Display', sans-serif;
+    background: rgba(255,255,255,0.5);
+    outline: none;
+}
+
+.logininfo .lembrar {
+    display: flex;
+    gap: 6px;
+    margin: 12px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.logininfo button {
+    width: 100px;
+    padding: 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 12px;
+    background: #A8B89A;
+    color: white;
+    font-size: 16px;
+    font-family: 'Momo Trust Sans', sans-serif;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.logininfo a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
