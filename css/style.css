@@ -166,11 +166,11 @@ margin-right: 20px;
 
 .qualidade {
     background-color: #F5EBDD;
-    height: 80vh;
+    height: 100vh;
 }
 
 .qualidade img {
-    width: 35%;
+    width: 100%;
     
 }
 .qualidade-head {
@@ -179,6 +179,33 @@ margin-right: 20px;
     align-items: center;
     flex-direction: column;
     padding-top: 5%;
+}
+.circulo {
+    width: 250px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #A8B89A;
+}
+.qualidade-blocos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.qualidade-bloco {
+    width: 40%;
+    border:2px solid;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qualidade-bloco-info {
+    display: flex;
+}
+
+.qualidade-bloco-texto {
+    display: flex;
 }
 
 footer {
