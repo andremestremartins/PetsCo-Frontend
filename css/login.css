@@ -53,6 +53,10 @@ body{
     outline: none;
 }
 
+.login-lembrar{
+    width: 80vh;
+}
+
 .logininfo .lembrar {
     display: flex;
     gap: 6px;
@@ -81,4 +85,6 @@ body{
     text-decoration: none;
     margin-top: 8px;
 }
+
+
 
