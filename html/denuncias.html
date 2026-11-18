@@ -1,45 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pets&Co</title>
+    <title>Pets&Co - Denunciar ou Reportar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <section class="denuncias"></section>
-    <div class=denuncias>
-        <h1>Denunciar ou Reportar um Problema</h1>
-        <p>Se encontrou algum problema, tem uma reclamação ou pretende reportar algo, preencha o formulário abaixo, vamos analisar a sua mensagem o mais rápido possível!</p>
-    </div>
-    <div class="nome">
-        <h2>Nome (opcional)</h2>
-        <input type="nome" placeholder="O seu nome">
-    </div>
-    <div class="email">
-        <h2>Email (opcional)</h2>
-        <input type="email" placeholder="O seu email">
-    </div>
-    <div class="relato">
-        <h2>Tipo de Relato *</h2>
-        <select name="relato">
-        <option value="option1">Selecione uma opção: </option>
-    </div>
-    <div class="descriçao">
-        <input type="descrição" placeholder="Descreva o que aconteceu com maior detalhe possível...">
-    </div>
-    <div class="upload">
-        <form action="processar_upload.php" method="post" enctype="multipart/form-data">
-            <label for="arquivo">Selecione o ficheiro:</label>
-            <input type="file" id="arquivo" name="arquivo" required>
-        </form>
-    </div>
-        <button type="submit">Enviar Relato</button>
-        </select>   
-</body>
 
+    <main class="pagina">
+    <header class="cabecalho">
+    <div class="logo">
+        <span>Pets&Co</span>
+    </div>
+    <h1>Denunciar ou Reportar<br>um Problema</h1>
+    <p class="subtitulo">
+        A sua opinião é importante para nós!
+    </p>
+    </header>
+
+    <section class="formulario">
+    <div class="introducao">
+        Se encontrou algum problema, tem uma reclamação
+        ou pretende reportar algo, preencha o formulário
+        abaixo. Vamos analisar a sua mensagem o mais
+        rápido possível!
+    </div>
+
+    <form action="processar_upload.php"
+        method="POST"
+        enctype="multipart/form-data">
+
+    <div class="nome">
+        <label for="nome">Nome (opcional)</label>
+        <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="O seu nome">
+    </div>
+
+    <div class="email">
+        <label for="email">Email (opcional)</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="O seu email">
+    </div>
+
+    <div class="tiporelato">
+        <label for="relato">Tipo de Relato *</label>
+        <select id="relato" name="relato" required>
+            <option value="" selected disabled>
+                Selecione uma opção
+            </option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="problema">Problema</option>
+            <option value="sugestao">Sugestão</option>
+            <option value="denuncia">Denúncia</option>
+            <option value="outro">Outro</option>
+        </select>
+    </div>
+
+    <div class="descricao">
+        <label for="descricao">Descrição do Problema *</label>
+
+        <textarea
+            id="descricao"
+            name="descricao"
+            placeholder="Descreva o que aconteceu com o maior detalhe possível..."
+            required></textarea>
+    </div>
+
+    <div class="upload">
+        <label for="arquivo">Anexar Ficheiro (opcional)</label>
+
+    <label class="upload-area" for="arquivo">
+        <span id="texto-upload">
+            Anexe um ficheiro ou clique para selecionar
+        </span>
+    </label>
+
+    <input
+        type="file"
+        id="arquivo"
+        name="arquivo"
+        hidden>
+    </div>
+
+    <button type="submit" class="botao-enviar">
+        Enviar Relato
+    </button>
+    </form>
+    </div>
+
+    </section>
+
+    <footer class="footer">
+        <span>Pets & Co - Amor em cada Pata</span>
+    </footer>
+
+    </main>
+
+</body>
 </html>
