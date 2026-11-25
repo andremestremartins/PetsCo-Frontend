@@ -237,12 +237,57 @@ margin-right: 20px;
 #espaco {
     background-color: #F5EBDD;
     height: 180vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
+#espaco h1{
+    font-size: 64px;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #5C370D;
+}
+
+#espaco h3 {
+    font-size: 24px;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#espaco p {
+    font-size: 20px;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;;
+}
+
+#espaco-cima {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+#espaco-cima img{
+    border-radius: 30px;
+}
+
+#espaco-esquerda {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 950px;
+}
 
 #espaco-circulos {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
+    gap:10%
 }
 
 .espaco-circulo {
@@ -257,10 +302,36 @@ margin-right: 20px;
     background-color: #A8B89A;
     border: #A8B89A;
     border-radius: 999px;
-    width: 10%;
+    width: fit-content;
     height: 60%;
     padding: 14px 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
+#espaco-conhecer-espaco img{
+    height: 25px;
+    width: 25px;
+}
+
+#espaco-baixo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#espaco-baixo img {
+    max-height: 230px;
+    border-radius: 20px;
+}
+
 
 .inverter {
     transform: scaleX(-1);
